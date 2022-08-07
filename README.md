@@ -2,4 +2,4 @@
 
 To show this website
 
-visit this side https://mihir210.github.io/zomato_front_clone
+visit this site https://mihir210.github.io/zomato_front_clone
