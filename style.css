@@ -11,6 +11,14 @@
     background-position: center;
     color: white;
     min-height: 60vh;
+    filter: blur(5px);
+    animation: unblur 2.5s forwards;
+}
+
+@keyframes unblur {
+    to {
+        filter: blur(0px);
+    }
 }
 
 .navbar {
@@ -98,6 +106,312 @@
     color: black;
 }
 
+.container {
+    margin: 3rem auto;
+    width: 80%;
+}
+
+.we_offer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.we__offer_card {
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1.5px solid #e0e0e0;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.we__offer_card:hover {
+    transform: scale(1.04);
+}
+
+.we__offer_card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.we__offer_contant {
+    padding: 10px;
+}
+
+.we__offer_contant h2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.we__offer_contant p {
+    font-size: 15px;
+    font-weight: 350;
+}
+
+.collection h1 {
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.collection .sub__head_container {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.sub__head_container span:nth-child(2) {
+    color: red;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.collections_card_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.collections_card_container .card {
+    height: 300px;
+    min-width: 240px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.collections_card_container .card:hover {
+    transform: scale(1.04);
+}
+
+.card1 {
+    background-image: url(images/collection4.jpg);
+}
+
+.card2 {
+    background-image: url(images/collection2.jpg);
+}
+
+.card3 {
+    background-image: url(images/collection3.jpg);
+}
+
+.card4 {
+    background-image: url(images/item4.png);
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.968) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 85%);
+}
+
+.collections_card_container .card .content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.get__theapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 247, 240);
+    width: 100%;
+}
+
+.get__theapp .semiContainer {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.get__theapp .semiContainer .left {
+    flex: 2;
+}
+
+.get__theapp .semiContainer .left img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.get__theapp .semiContainer .right {
+    flex: 4;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.right h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.right p {
+    font-size: 1rem;
+}
+
+.semiContainer .right .radio_button_container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.semiContainer .right .radio_button_container div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.7rem;
+}
+
+.semiContainer .right .radio_button_container div input {
+    height: 15px;
+    width: 15px;
+    accent-color: red;
+}
+
+.semiContainer .input_container {
+    display: flex;
+    gap: 2rem;
+}
+
+.input_container button,
+input {
+    padding: 10px 12px;
+}
+
+.input_container input {
+    flex: auto;
+    border: 1px solid gray;
+    outline: none;
+    border-radius: 8px;
+}
+
+.input_container {
+    flex-wrap: wrap;
+}
+
+.input_container button {
+    border: none;
+    background-color: rgb(237, 33, 33);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.right .download_app_container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.download_app_container h5 {
+    font-weight: 500;
+    color: gray;
+    font-size: 1rem;
+}
+
+.download_app_container div {
+    display: flex;
+    gap: 1rem;
+}
+
+.download_app_container div a {
+    width: 100%;
+}
+
+.download_app_container div a img {
+    width: 75%;
+}
+
+.accordion {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(128, 128, 128, 0.015);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.accordion_trigger {
+    display: block;
+    padding: 13px 25px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+.accordion_trigger::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -4px;
+    border-top: 8px solid rgb(0, 0, 0);
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+}
+
+.Acoo {
+    border-radius: 10px;
+    border: 1.5px solid rgb(37, 37, 37);
+    outline: none;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.accordian_container {
+    display: none;
+    overflow: hidden;
+    margin: 1px 2px;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+.ac_hide {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.accordian_container p,
+ul,
+a {
+    margin: 20px;
+}
+
+.ac_hide:checked+.accordian_container {
+    display: flex;
+}
+
 @media only screen and (max-width:600px) {
     .navbar__manu_container .user_icon {
         display: flex;
@@ -128,5 +442,27 @@
     .hero__section_title {
         font-size: 30px;
         width: 80%;
+    }
+}
+
+@media only screen and (max-width:1300px) {
+    .get__theapp .semiContainer .left {
+        flex: 1;
+    }
+    .get__theapp .semiContainer .right {
+        flex: 1;
+    }
+    .get__theapp .semiContainer {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width:900px) {
+    .get__theapp {
+        padding: 2.5rem;
+    }
+    .get__theapp .semiContainer {
+        width: 80%;
+        flex-direction: column;
     }
 }
