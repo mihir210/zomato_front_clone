@@ -412,6 +412,102 @@ a {
     display: flex;
 }
 
+.footer {
+    width: 100%;
+}
+
+.footer_section1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.footer_section1 img {
+    width: 120px;
+}
+
+.section1_buttoncontainer {
+    display: flex;
+    gap: 1rem;
+}
+
+.section1_buttoncontainer button {
+    padding: 5px 5px;
+    width: 90px;
+    border: 1px solid gray;
+    background-color: transparent;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.navigation_container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    width: 80%;
+    margin: auto;
+    gap: 1rem;
+    padding: 3rem o;
+}
+
+.link_container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.link_container h5 {
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 5px;
+    letter-spacing: 0.8px;
+}
+
+.footer_link {
+    text-decoration: none;
+    color: gray;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.footer_link:hover {
+    color: black;
+}
+
+.section_link_container {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.section_link_container button {
+    background-color: black;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_link_container button i {
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.footer_section_logo {
+    width: 100%;
+    cursor: pointer;
+}
+
 @media only screen and (max-width:600px) {
     .navbar__manu_container .user_icon {
         display: flex;
@@ -464,5 +560,20 @@ a {
     .get__theapp .semiContainer {
         width: 80%;
         flex-direction: column;
+    }
+    .navigation_container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:600px) {
+    .navigation_container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:450px) {
+    .navigation_container {
+        grid-template-columns: 1fr;
     }
 }
